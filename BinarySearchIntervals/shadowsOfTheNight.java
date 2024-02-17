@@ -1,10 +1,8 @@
 import java.util.*;
-import java.io.*;
-import java.math.*;
-
 
 class Player {
 
+    @SuppressWarnings({ "resource", "unused" })
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         int W = in.nextInt(); // width of the building.
