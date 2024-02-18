@@ -42,25 +42,11 @@ for (let i = 0; i < S2; i++) {
 }
 let num2 = mayanToDecimal(num2Lines);
 
-// Read the operation
+// Read the operation +, -, * or /
 const operation = readline();
 
 // Perform the operation
-let result;
-switch (operation) {
-    case '+':
-        result = num1 + num2;
-        break;
-    case '-':
-        result = num1 - num2;
-        break;
-    case '*':
-        result = num1 * num2;
-        break;
-    case '/':
-        result = num1 / num2;
-        break;
-}
+let result = eval(num1 + operation + num2);
 
 // Function to convert a decimal number to a Mayan number
 function decimalToMayan(decimal) {
